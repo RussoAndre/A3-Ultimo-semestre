@@ -1,0 +1,415 @@
+{
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "add": "Adicionar",
+    "close": "Fechar",
+    "confirm": "Confirmar",
+    "back": "Voltar",
+    "next": "Próximo",
+    "submit": "Enviar",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "clear": "Limpar",
+    "retry": "Tentar Novamente"
+  },
+  "auth": {
+    "login": "Entrar",
+    "register": "Registrar",
+    "logout": "Sair",
+    "email": "E-mail",
+    "password": "Senha",
+    "confirmPassword": "Confirmar Senha",
+    "forgotPassword": "Esqueceu a senha?",
+    "rememberMe": "Lembrar-me",
+    "alreadyHaveAccount": "Já tem uma conta?",
+    "dontHaveAccount": "Não tem uma conta?",
+    "loginSuccess": "Login realizado com sucesso!",
+    "registerSuccess": "Registro realizado com sucesso!",
+    "loginError": "Falha no login. Verifique suas credenciais.",
+    "registerError": "Falha no registro. Tente novamente.",
+    "selectLanguage": "Selecionar Idioma",
+    "emailRequired": "E-mail é obrigatório",
+    "emailInvalid": "Por favor, insira um endereço de e-mail válido",
+    "emailPlaceholder": "seu@email.com",
+    "passwordRequired": "Senha é obrigatória",
+    "passwordMinLength": "A senha deve ter pelo menos 8 caracteres",
+    "passwordPattern": "A senha deve conter maiúscula, minúscula e número",
+    "passwordPlaceholder": "Digite sua senha",
+    "confirmPasswordRequired": "Por favor, confirme sua senha",
+    "confirmPasswordPlaceholder": "Confirme sua senha",
+    "passwordMismatch": "As senhas não coincidem",
+    "preferredLanguage": "Idioma Preferido",
+    "languageRequired": "Por favor, selecione um idioma"
+  },
+  "languages": {
+    "english": "Inglês",
+    "portuguese": "Português"
+  },
+  "dashboard": {
+    "title": "Painel",
+    "welcome": "Bem-vindo de volta",
+    "subtitle": "Acompanhe seu consumo de energia e impacto ambiental",
+    "devices": "Dispositivos",
+    "consumption": "Consumo de Energia",
+    "recommendations": "Recomendações",
+    "quickStats": "Estatísticas Rápidas",
+    "totalConsumption": "Consumo Total",
+    "averageDaily": "Média Diária",
+    "comparisonToPrevious": "vs Período Anterior",
+    "topDevices": "Dispositivos com Maior Consumo",
+    "energyChart": {
+      "title": "Tendência de Consumo de Energia",
+      "7days": "7 Dias",
+      "30days": "30 Dias",
+      "90days": "90 Dias",
+      "totalConsumption": "Consumo Total",
+      "averageDaily": "Média Diária",
+      "peakDay": "Dia de Pico",
+      "consumption": "Consumo (kWh)",
+      "error": "Erro ao carregar dados de energia",
+      "noData": "Nenhum dado de consumo disponível para este período"
+    },
+    "quickStats": {
+      "noData": "Nenhum dado de consumo disponível",
+      "thisMonth": "Este mês",
+      "perDay": "Por dia",
+      "decreased": "Diminuiu em relação ao mês passado",
+      "increased": "Aumentou em relação ao mês passado"
+    },
+    "consumptionBreakdown": {
+      "title": "Consumo por Tipo de Dispositivo",
+      "error": "Erro ao carregar detalhamento de consumo",
+      "noData": "Nenhum dado de consumo disponível"
+    },
+    "topDevices": {
+      "error": "Erro ao carregar principais dispositivos",
+      "noData": "Nenhum dado de dispositivo disponível",
+      "totalShown": "Total dos {{count}} principais dispositivos"
+    },
+    "recommendations": {
+      "placeholder": {
+        "title": "Dicas de economia de energia em breve",
+        "description": "Recomendações personalizadas aparecerão aqui com base em seus padrões de uso"
+      }
+    },
+    "emptyState": {
+      "title": "Comece Sua Jornada de Energia",
+      "description": "Adicione seu primeiro dispositivo para começar a rastrear seu consumo de energia e ganhar recompensas por práticas sustentáveis!"
+    }
+  },
+  "devices": {
+    "title": "Dispositivos",
+    "addDevice": "Adicionar Dispositivo",
+    "editDevice": "Editar Dispositivo",
+    "deleteDevice": "Excluir Dispositivo",
+    "deviceName": "Nome do Dispositivo",
+    "deviceType": "Tipo de Dispositivo",
+    "wattage": "Potência (W)",
+    "dailyUsage": "Uso Diário (horas)",
+    "estimatedConsumption": "Consumo Diário Estimado",
+    "status": "Status",
+    "active": "Ativo",
+    "disposed": "Descartado",
+    "registeredAt": "Registrado em",
+    "noDevices": "Nenhum dispositivo registrado ainda",
+    "addFirstDevice": "Adicione seu primeiro dispositivo para começar a rastrear",
+    "types": {
+      "computer": "Computador",
+      "monitor": "Monitor",
+      "printer": "Impressora",
+      "appliance": "Eletrodoméstico",
+      "lighting": "Iluminação",
+      "other": "Outro"
+    },
+    "disposal": {
+      "title": "Registrar Descarte",
+      "date": "Data do Descarte",
+      "method": "Método de Descarte",
+      "recycling": "Reciclagem",
+      "donation": "Doação",
+      "properDisposal": "Descarte Adequado",
+      "success": "Descarte registrado com sucesso"
+    }
+  },
+  "energy": {
+    "title": "Consumo de Energia",
+    "consumption": "Consumo",
+    "trends": "Tendências",
+    "last30Days": "Últimos 30 Dias",
+    "thisMonth": "Este Mês",
+    "lastMonth": "Mês Passado",
+    "kwh": "kWh",
+    "byDevice": "Por Dispositivo",
+    "byType": "Por Tipo",
+    "cost": "Custo Estimado"
+  },
+  "recommendations": {
+    "title": "Recomendações",
+    "personalizedTips": "Dicas Personalizadas",
+    "potentialSavings": "Economia Potencial",
+    "priority": "Prioridade",
+    "high": "Alta",
+    "medium": "Média",
+    "low": "Baixa",
+    "markComplete": "Marcar como Concluída",
+    "completed": "Concluída",
+    "noRecommendations": "Nenhuma recomendação disponível",
+    "checkBackLater": "Volte mais tarde para dicas personalizadas"
+  },
+  "rewards": {
+    "title": "Recompensas",
+    "points": "Pontos",
+    "totalPoints": "Total de Pontos",
+    "tier": "Nível",
+    "currentTier": "Nível Atual",
+    "badges": "Emblemas",
+    "leaderboard": "Classificação",
+    "earnedBadges": "Emblemas Conquistados",
+    "pointsHistory": "Histórico de Pontos",
+    "progressToNext": "Progresso para o Próximo Nível",
+    "pointsRemaining": "pontos restantes",
+    "maxTierReached": "Nível máximo alcançado!",
+    "earnedOn": "Conquistado em",
+    "pointsRequired": "pontos necessários",
+    "tiers": {
+      "bronze": "Bronze",
+      "silver": "Prata",
+      "gold": "Ouro",
+      "platinum": "Platina"
+    },
+    "actions": {
+      "deviceRegistration": "Registro de Dispositivo",
+      "recommendationCompleted": "Recomendação Concluída",
+      "deviceDisposal": "Descarte de Dispositivo",
+      "articleRead": "Artigo Lido"
+    },
+    "badges": {
+      "title": "Emblemas",
+      "earned": "Conquistados",
+      "firstDevice": "Primeiro Dispositivo",
+      "firstDeviceDesc": "Registre seu primeiro dispositivo",
+      "energySaver": "Economizador de Energia",
+      "energySaverDesc": "Economize 100 kWh de energia",
+      "recycler": "Reciclador",
+      "recyclerDesc": "Recicle 5 dispositivos",
+      "scholar": "Estudioso",
+      "scholarDesc": "Complete 5 artigos educacionais",
+      "champion": "Campeão",
+      "championDesc": "Alcance 500 pontos",
+      "ecoWarrior": "Guerreiro Ecológico",
+      "ecoWarriorDesc": "Alcance 1000 pontos"
+    },
+    "history": {
+      "title": "Atividade Recente",
+      "empty": "Nenhuma atividade ainda. Comece a ganhar pontos!",
+      "viewAll": "Ver Todo o Histórico"
+    },
+    "leaderboard": {
+      "title": "Classificação",
+      "weekly": "Semanal",
+      "monthly": "Mensal",
+      "allTime": "Todos os Tempos",
+      "you": "Você",
+      "empty": "Nenhum dado de classificação disponível",
+      "consentRequired": "Junte-se à Classificação",
+      "consentMessage": "Para aparecer na classificação e competir com outros usuários, precisamos do seu consentimento para exibir seu nome de usuário e pontos.",
+      "joinLeaderboard": "Entrar na Classificação",
+      "privacySettings": "Configurações de Privacidade",
+      "privacyMessage": "Você pode se ocultar da classificação a qualquer momento. Seus pontos e progresso ainda serão rastreados de forma privada.",
+      "hideMe": "Ocultar da Classificação"
+    }
+  },
+  "impact": {
+    "title": "Impacto Ambiental",
+    "report": "Relatório de Impacto",
+    "energySaved": "Energia Economizada",
+    "co2Reduction": "Redução de CO₂",
+    "treesEquivalent": "Equivalente em Árvores",
+    "waterSaved": "Água Economizada",
+    "devicesRecycled": "Dispositivos Reciclados",
+    "sustainabilityScore": "Pontuação de Sustentabilidade",
+    "downloadReport": "Baixar Relatório",
+    "period": "Período",
+    "comparison": "Comparação com Período Anterior"
+  },
+  "education": {
+    "title": "Centro Educacional",
+    "subtitle": "Aprenda sobre sustentabilidade e ganhe pontos",
+    "articles": "Artigos",
+    "articlesCompleted": "artigos concluídos",
+    "categoriesLabel": "Categorias",
+    "category": "Categoria",
+    "allCategories": "Todas as Categorias",
+    "sdgFilter": "Filtro ODS",
+    "allSDGs": "Todos os ODS",
+    "read": "Ler",
+    "readAgain": "Ler Novamente",
+    "completed": "Concluído",
+    "pointsEarned": "Pontos Ganhos",
+    "earnPoints": "Ganhe {{points}} pontos ao completar este artigo",
+    "markComplete": "Marcar como Concluído",
+    "scrollToComplete": "Role até o final para concluir",
+    "search": "Buscar artigos",
+    "searchPlaceholder": "Buscar por título ou conteúdo...",
+    "showCompleted": "Mostrar apenas concluídos",
+    "showIncomplete": "Mostrar apenas incompletos",
+    "clearFilters": "Limpar Filtros",
+    "noArticles": "Nenhum artigo encontrado",
+    "categories": {
+      "green_computing": "Computação Verde",
+      "energy_saving": "Economia de Energia",
+      "sustainability": "Sustentabilidade",
+      "sdg": "ODS",
+      "best_practices": "Melhores Práticas"
+    },
+    "sdg": {
+      "sdg_12": "ODS 12: Consumo Responsável",
+      "sdg_13": "ODS 13: Ação Climática"
+    }
+  },
+  "profile": {
+    "title": "Perfil",
+    "settings": "Configurações",
+    "progress": "Progresso",
+    "achievements": "Conquistas",
+    "statistics": "Estatísticas",
+    "language": "Idioma",
+    "notifications": "Notificações",
+    "privacy": "Privacidade",
+    "leaderboardConsent": "Mostrar-me na classificação",
+    "changePassword": "Alterar Senha",
+    "deleteAccount": "Excluir Conta",
+    "accountDeleted": "A conta será excluída em até 30 dias",
+    "daysActive": "Dias Ativos",
+    "totalEnergySaved": "Total de Energia Economizada",
+    "devicesRegistered": "Dispositivos Registrados",
+    "myProfile": "Meu Perfil",
+    "accountSettings": "Configurações da Conta",
+    "progressTimeline": "Linha do Tempo de Progresso",
+    "milestones": "Marcos",
+    "sustainabilityScore": "Pontuação de Sustentabilidade",
+    "currentStreak": "Sequência Atual",
+    "longestStreak": "Maior Sequência",
+    "co2Reduced": "CO₂ Reduzido",
+    "devicesRecycled": "Dispositivos Reciclados",
+    "recommendationsCompleted": "Recomendações Concluídas",
+    "articlesRead": "Artigos Lidos",
+    "memberSince": "Membro Desde",
+    "emailNotifications": "Notificações por E-mail",
+    "recommendationAlerts": "Alertas de Recomendação",
+    "achievementNotifications": "Notificações de Conquistas",
+    "weeklyReports": "Relatórios Semanais",
+    "currentPassword": "Senha Atual",
+    "newPassword": "Nova Senha",
+    "confirmNewPassword": "Confirmar Nova Senha",
+    "passwordChanged": "Senha alterada com sucesso",
+    "deleteAccountConfirm": "Tem certeza de que deseja excluir sua conta?",
+    "deleteAccountWarning": "Esta ação não pode ser desfeita. Sua conta e todos os dados serão permanentemente excluídos em até 30 dias.",
+    "deleteAccountReason": "Motivo da exclusão (opcional)",
+    "accountDeletedSuccess": "Sua solicitação de exclusão de conta foi enviada",
+    "updateSuccess": "Perfil atualizado com sucesso",
+    "updateError": "Falha ao atualizar perfil",
+    "noMilestones": "Nenhum marco ainda. Continue assim!",
+    "days": "dias",
+    "viewAll": "Ver Tudo"
+  },
+  "navigation": {
+    "home": "Início",
+    "dashboard": "Painel",
+    "devices": "Dispositivos",
+    "energy": "Energia",
+    "recommendations": "Recomendações",
+    "rewards": "Recompensas",
+    "impact": "Impacto",
+    "education": "Educação",
+    "profile": "Perfil"
+  },
+  "errors": {
+    "generic": "Algo deu errado. Por favor, tente novamente.",
+    "network": "Erro de rede. Verifique sua conexão.",
+    "unauthorized": "Você não está autorizado a realizar esta ação.",
+    "notFound": "O recurso solicitado não foi encontrado.",
+    "validation": "Por favor, verifique sua entrada e tente novamente.",
+    "serverError": "Erro no servidor. Tente novamente mais tarde."
+  },
+  "validation": {
+    "required": "Este campo é obrigatório",
+    "email": "Por favor, insira um endereço de e-mail válido",
+    "password": "A senha deve ter pelo menos 8 caracteres",
+    "passwordMatch": "As senhas não coincidem",
+    "positiveNumber": "Por favor, insira um número positivo",
+    "minValue": "O valor deve ser pelo menos {{min}}",
+    "maxValue": "O valor deve ser no máximo {{max}}"
+  },
+  "accessibility": {
+    "skipToMain": "Pular para o conteúdo principal",
+    "skipToNav": "Pular para a navegação",
+    "mainNavigation": "Navegação principal",
+    "primaryNavigation": "Navegação primária",
+    "closeMenu": "Fechar menu",
+    "userMenu": "Menu do usuário",
+    "toggleMenu": "Alternar menu",
+    "loading": "Carregando",
+    "closeNotification": "Fechar notificação",
+    "openInNewWindow": "Abre em nova janela",
+    "sortAscending": "Ordenar crescente",
+    "sortDescending": "Ordenar decrescente",
+    "expandSection": "Expandir seção",
+    "collapseSection": "Recolher seção"
+  },
+  "lgpd": {
+    "consent": {
+      "title": "Gerenciamento de Consentimento",
+      "description": "Gerencie seus consentimentos de processamento de dados de acordo com a LGPD",
+      "required": "Obrigatório",
+      "note": "Nota:",
+      "noteText": "Você pode alterar essas configurações a qualquer momento. Consentimentos obrigatórios são necessários para a funcionalidade básica do aplicativo.",
+      "dataProcessing": {
+        "title": "Processamento de Dados",
+        "description": "Necessário para o funcionamento do aplicativo. Processamos seus dados para fornecer recursos de rastreamento de energia e sustentabilidade."
+      },
+      "analytics": {
+        "title": "Análises",
+        "description": "Ajude-nos a melhorar o aplicativo permitindo análises de uso anônimas."
+      },
+      "marketing": {
+        "title": "Comunicações de Marketing",
+        "description": "Receba atualizações sobre novos recursos, dicas e notícias de sustentabilidade."
+      },
+      "leaderboard": {
+        "title": "Participação na Classificação",
+        "description": "Exibir seu nome de usuário e pontos na classificação pública."
+      }
+    },
+    "dataManagement": {
+      "title": "Gerenciamento de Dados",
+      "description": "Exportar ou excluir seus dados pessoais"
+    },
+    "dataExport": {
+      "title": "Exportar Seus Dados",
+      "description": "Baixe uma cópia de todos os seus dados armazenados em nosso sistema em formato JSON.",
+      "button": "Exportar Meus Dados",
+      "preparing": "Preparando exportação..."
+    },
+    "dataDeletion": {
+      "title": "Excluir Sua Conta",
+      "description": "Excluir permanentemente sua conta e todos os dados associados. Esta ação não pode ser desfeita.",
+      "button": "Excluir Minha Conta",
+      "status": "Status:",
+      "requestedAt": "Solicitado em:",
+      "scheduledDate": "Exclusão agendada:",
+      "pendingMessage": "Sua conta está agendada para exclusão. Você pode cancelar esta solicitação antes da data agendada.",
+      "cancel": "Cancelar Solicitação de Exclusão",
+      "warning": "Esta ação excluirá permanentemente sua conta e todos os dados associados em até 30 dias. Isso não pode ser desfeito.",
+      "reasonLabel": "Motivo (opcional)",
+      "reasonPlaceholder": "Conte-nos por que você está saindo...",
+      "confirm": "Confirmar Exclusão"
+    }
+  }
+}

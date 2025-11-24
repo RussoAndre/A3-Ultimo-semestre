@@ -1,0 +1,6 @@
+export { LoginPage } from './LoginPage'
+export { RegisterPage } from './RegisterPage'
+export { DashboardPage } from './DashboardPage'
+export { ImpactPage } from './ImpactPage'
+export { default as EducationPage } from './EducationPage'
+export { ProfilePage } from './ProfilePage'

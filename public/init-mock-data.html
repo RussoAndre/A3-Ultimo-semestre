@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initialize Mock Data - EcoTech</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #10B981;
+            margin-top: 0;
+        }
+        button {
+            background: #10B981;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px 10px 0;
+        }
+        button:hover {
+            background: #059669;
+        }
+        .success {
+            background: #D1FAE5;
+            color: #065F46;
+            padding: 12px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        .info {
+            background: #DBEAFE;
+            color: #1E40AF;
+            padding: 12px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        pre {
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🎭 Initialize Mock Data</h1>
+        
+        <div class="info">
+            <strong>Current User:</strong> <span id="userEmail">Not logged in</span>
+        </div>
+
+        <p>Click the button below to generate mock data for your account. This will add:</p>
+        <ul>
+            <li>4 sample devices</li>
+            <li>30 days of energy consumption data</li>
+            <li>4 personalized recommendations</li>
+            <li>150 reward points with badges</li>
+            <li>Transaction history</li>
+        </ul>
+
+        <button onclick="initializeMockData()">Generate Mock Data</button>
+        <button onclick="window.location.href='/'">Go to App</button>
+
+        <div id="result"></div>
+
+        <h3>Manual Console Commands:</h3>
+        <pre>// View current user
+console.log(JSON.parse(localStorage.getItem('user')))
+
+// View mock data
+const user = JSON.parse(localStorage.getItem('user'))
+console.log(JSON.parse(localStorage.getItem(`mock_data_${user.id}`)))
+
+// Clear mock data
+localStorage.removeItem(`mock_data_${user.id}`)
+
+// Clear everything
+localStorage.clear()</pre>
+    </div>
+
+    <script>
+        // Display current user
+        const user = localStorage.getItem('user')
+        if (user) {
+            const userData = JSON.parse(user)
+            document.getElementById('userEmail').textContent = userData.email
+        } else {
+            document.getElementById('userEmail').textContent = 'Not logged in - Please register first'
+        }
+
+        function initializeMockData() {
+            const user = localStorage.getItem('user')
+            if (!user) {
+                document.getElementById('result').innerHTML = '<div class="info">Please register or login first!</div>'
+                return
+            }
+
+            const userData = JSON.parse(user)
+            const userId = userData.id
+
+            // Generate mock data
+            const mockData = {
+                devices: generateMockDevices(userId),
+                energyData: generateMockEnergyData(30),
+                recommendations: generateMockRecommendations(),
+                rewards: generateMockRewards(userId),
+                initialized: true,
+                initializedAt: new Date().toISOString(),
+            }
+
+            localStorage.setItem(`mock_data_${userId}`, JSON.stringify(mockData))
+
+            document.getElementById('result').innerHTML = `
+                <div class="success">
+                    <strong>✅ Success!</strong><br>
+                    Mock data generated for ${userData.email}<br>
+                    <br>
+                    Generated:<br>
+                    • ${mockData.devices.length} devices<br>
+                    • ${mockData.energyData.length} days of energy data<br>
+                    • ${mockData.recommendations.length} recommendations<br>
+                    • ${mockData.rewards.totalPoints} reward points<br>
+                    • ${mockData.rewards.badges.length} badges<br>
+                    <br>
+                    <button onclick="window.location.href='/'">Go to Dashboard</button>
+                </div>
+            `
+        }
+
+        // Mock data generation functions (simplified versions)
+        function generateMockDevices(userId) {
+            const now = new Date()
+            return [
+                {
+                    id: 'device_1',
+                    userId,
+                    name: 'Dell Laptop',
+                    type: 'computer',
+                    wattage: 65,
+                    dailyUsageHours: 8,
+                    estimatedDailyConsumption: 0.52,
+                    status: 'active',
+                    registeredAt: new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000).toISOString(),
+                },
+                {
+                    id: 'device_2',
+                    userId,
+                    name: 'Samsung Monitor 24"',
+                    type: 'monitor',
+                    wattage: 30,
+                    dailyUsageHours: 8,
+                    estimatedDailyConsumption: 0.24,
+                    status: 'active',
+                    registeredAt: new Date(now.getTime() - 25 * 24 * 60 * 60 * 1000).toISOString(),
+                },
+                {
+                    id: 'device_3',
+                    userId,
+                    name: 'HP Printer',
+                    type: 'printer',
+                    wattage: 15,
+                    dailyUsageHours: 2,
+                    estimatedDailyConsumption: 0.03,
+                    status: 'active',
+                    registeredAt: new Date(now.getTime() - 20 * 24 * 60 * 60 * 1000).toISOString(),
+                },
+                {
+                    id: 'device_4',
+                    userId,
+                    name: 'LED Desk Lamp',
+                    type: 'lighting',
+                    wattage: 12,
+                    dailyUsageHours: 6,
+                    estimatedDailyConsumption: 0.072,
+                    status: 'active',
+                    registeredAt: new Date(now.getTime() - 15 * 24 * 60 * 60 * 1000).toISOString(),
+                },
+            ]
+        }
+
+        function generateMockEnergyData(days) {
+            const data = []
+            const now = new Date()
+            for (let i = days - 1; i >= 0; i--) {
+                const date = new Date(now.getTime() - i * 24 * 60 * 60 * 1000)
+                const baseConsumption = 0.85
+                const variation = (Math.random() - 0.5) * 0.3
+                data.push({
+                    date: date.toISOString().split('T')[0],
+                    consumption: Math.max(0.5, baseConsumption + variation),
+                    cost: (baseConsumption + variation) * 0.15,
+                })
+            }
+            return data
+        }
+
+        function generateMockRecommendations() {
+            return [
+                {
+                    id: 'rec_1',
+                    title: 'Enable Power Saving Mode on Your Laptop',
+                    description: 'Activating power saving mode can reduce your laptop energy consumption by up to 30%.',
+                    priority: 'high',
+                    potentialSavingsKwh: 4.5,
+                    potentialSavingsCost: 0.68,
+                    category: 'energy_saving',
+                    completed: false,
+                    createdAt: new Date().toISOString(),
+                },
+                {
+                    id: 'rec_2',
+                    title: 'Adjust Monitor Brightness',
+                    description: 'Reducing your monitor brightness to 70% can decrease energy consumption by 20%.',
+                    priority: 'medium',
+                    potentialSavingsKwh: 1.44,
+                    potentialSavingsCost: 0.22,
+                    category: 'energy_saving',
+                    completed: false,
+                    createdAt: new Date().toISOString(),
+                },
+                {
+                    id: 'rec_3',
+                    title: 'Unplug Devices When Not in Use',
+                    description: 'Devices in standby mode still consume energy.',
+                    priority: 'low',
+                    potentialSavingsKwh: 0.5,
+                    potentialSavingsCost: 0.08,
+                    category: 'best_practices',
+                    completed: false,
+                    createdAt: new Date().toISOString(),
+                },
+                {
+                    id: 'rec_4',
+                    title: 'Use Natural Light During Daytime',
+                    description: 'Take advantage of natural daylight and turn off your desk lamp.',
+                    priority: 'medium',
+                    potentialSavingsKwh: 2.0,
+                    potentialSavingsCost: 0.30,
+                    category: 'energy_saving',
+                    completed: false,
+                    createdAt: new Date().toISOString(),
+                },
+            ]
+        }
+
+        function generateMockRewards(userId) {
+            const now = new Date()
+            return {
+                userId,
+                totalPoints: 150,
+                currentTier: 'silver',
+                pointsToNextTier: 350,
+                badges: [
+                    {
+                        id: 'badge_1',
+                        name: 'First Device',
+                        description: 'Register your first device',
+                        icon: '🎯',
+                        earnedAt: new Date(now.getTime() - 5 * 24 * 60 * 60 * 1000).toISOString(),
+                        points: 10,
+                    },
+                    {
+                        id: 'badge_2',
+                        name: 'Energy Saver',
+                        description: 'Save 100 kWh of energy',
+                        icon: '⚡',
+                        earnedAt: new Date(now.getTime() - 3 * 24 * 60 * 60 * 1000).toISOString(),
+                        points: 50,
+                    },
+                    {
+                        id: 'badge_3',
+                        name: 'Scholar',
+                        description: 'Complete 5 educational articles',
+                        icon: '📚',
+                        earnedAt: new Date(now.getTime() - 1 * 24 * 60 * 60 * 1000).toISOString(),
+                        points: 50,
+                    },
+                ],
+                recentTransactions: [
+                    {
+                        id: 'trans_1',
+                        userId,
+                        points: 50,
+                        action: 'articleRead',
+                        description: 'Completed article: Green Computing Basics',
+                        createdAt: new Date(now.getTime() - 1 * 24 * 60 * 60 * 1000).toISOString(),
+                    },
+                    {
+                        id: 'trans_2',
+                        userId,
+                        points: 50,
+                        action: 'recommendationCompleted',
+                        description: 'Completed recommendation: Enable Power Saving Mode',
+                        createdAt: new Date(now.getTime() - 3 * 24 * 60 * 60 * 1000).toISOString(),
+                    },
+                    {
+                        id: 'trans_3',
+                        userId,
+                        points: 10,
+                        action: 'deviceRegistration',
+                        description: 'Registered device: Dell Laptop',
+                        createdAt: new Date(now.getTime() - 5 * 24 * 60 * 60 * 1000).toISOString(),
+                    },
+                ],
+            }
+        }
+    </script>
+</body>
+</html>

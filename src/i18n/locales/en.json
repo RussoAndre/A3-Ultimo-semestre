@@ -1,0 +1,415 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "close": "Close",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "search": "Search",
+    "filter": "Filter",
+    "clear": "Clear",
+    "retry": "Retry"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot Password?",
+    "rememberMe": "Remember Me",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?",
+    "loginSuccess": "Login successful!",
+    "registerSuccess": "Registration successful!",
+    "loginError": "Login failed. Please check your credentials.",
+    "registerError": "Registration failed. Please try again.",
+    "selectLanguage": "Select Language",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email address",
+    "emailPlaceholder": "your@email.com",
+    "passwordRequired": "Password is required",
+    "passwordMinLength": "Password must be at least 8 characters",
+    "passwordPattern": "Password must contain uppercase, lowercase, and number",
+    "passwordPlaceholder": "Enter your password",
+    "confirmPasswordRequired": "Please confirm your password",
+    "confirmPasswordPlaceholder": "Confirm your password",
+    "passwordMismatch": "Passwords do not match",
+    "preferredLanguage": "Preferred Language",
+    "languageRequired": "Please select a language"
+  },
+  "languages": {
+    "english": "English",
+    "portuguese": "Portuguese"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back",
+    "subtitle": "Track your energy consumption and environmental impact",
+    "devices": "Devices",
+    "consumption": "Energy Consumption",
+    "recommendations": "Recommendations",
+    "quickStats": "Quick Stats",
+    "totalConsumption": "Total Consumption",
+    "averageDaily": "Average Daily",
+    "comparisonToPrevious": "vs Previous Period",
+    "topDevices": "Top Consuming Devices",
+    "energyChart": {
+      "title": "Energy Consumption Trend",
+      "7days": "7 Days",
+      "30days": "30 Days",
+      "90days": "90 Days",
+      "totalConsumption": "Total Consumption",
+      "averageDaily": "Average Daily",
+      "peakDay": "Peak Day",
+      "consumption": "Consumption (kWh)",
+      "error": "Error loading energy data",
+      "noData": "No consumption data available for this period"
+    },
+    "quickStats": {
+      "noData": "No consumption data available",
+      "thisMonth": "This month",
+      "perDay": "Per day",
+      "decreased": "Decreased from last month",
+      "increased": "Increased from last month"
+    },
+    "consumptionBreakdown": {
+      "title": "Consumption by Device Type",
+      "error": "Error loading consumption breakdown",
+      "noData": "No consumption data available"
+    },
+    "topDevices": {
+      "error": "Error loading top devices",
+      "noData": "No device data available",
+      "totalShown": "Total from top {{count}} devices"
+    },
+    "recommendations": {
+      "placeholder": {
+        "title": "Energy-saving tips coming soon",
+        "description": "Personalized recommendations will appear here based on your usage patterns"
+      }
+    },
+    "emptyState": {
+      "title": "Start Your Energy Journey",
+      "description": "Add your first device to start tracking your energy consumption and earn rewards for sustainable practices!"
+    }
+  },
+  "devices": {
+    "title": "Devices",
+    "addDevice": "Add Device",
+    "editDevice": "Edit Device",
+    "deleteDevice": "Delete Device",
+    "deviceName": "Device Name",
+    "deviceType": "Device Type",
+    "wattage": "Wattage (W)",
+    "dailyUsage": "Daily Usage (hours)",
+    "estimatedConsumption": "Estimated Daily Consumption",
+    "status": "Status",
+    "active": "Active",
+    "disposed": "Disposed",
+    "registeredAt": "Registered At",
+    "noDevices": "No devices registered yet",
+    "addFirstDevice": "Add your first device to start tracking",
+    "types": {
+      "computer": "Computer",
+      "monitor": "Monitor",
+      "printer": "Printer",
+      "appliance": "Appliance",
+      "lighting": "Lighting",
+      "other": "Other"
+    },
+    "disposal": {
+      "title": "Record Disposal",
+      "date": "Disposal Date",
+      "method": "Disposal Method",
+      "recycling": "Recycling",
+      "donation": "Donation",
+      "properDisposal": "Proper Disposal",
+      "success": "Disposal recorded successfully"
+    }
+  },
+  "energy": {
+    "title": "Energy Consumption",
+    "consumption": "Consumption",
+    "trends": "Trends",
+    "last30Days": "Last 30 Days",
+    "thisMonth": "This Month",
+    "lastMonth": "Last Month",
+    "kwh": "kWh",
+    "byDevice": "By Device",
+    "byType": "By Type",
+    "cost": "Estimated Cost"
+  },
+  "recommendations": {
+    "title": "Recommendations",
+    "personalizedTips": "Personalized Tips",
+    "potentialSavings": "Potential Savings",
+    "priority": "Priority",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low",
+    "markComplete": "Mark as Complete",
+    "completed": "Completed",
+    "noRecommendations": "No recommendations available",
+    "checkBackLater": "Check back later for personalized tips"
+  },
+  "rewards": {
+    "title": "Rewards",
+    "points": "Points",
+    "totalPoints": "Total Points",
+    "tier": "Tier",
+    "currentTier": "Current Tier",
+    "badges": "Badges",
+    "leaderboard": "Leaderboard",
+    "earnedBadges": "Earned Badges",
+    "pointsHistory": "Points History",
+    "progressToNext": "Progress to Next Tier",
+    "pointsRemaining": "points remaining",
+    "maxTierReached": "Maximum tier reached!",
+    "earnedOn": "Earned on",
+    "pointsRequired": "points required",
+    "tiers": {
+      "bronze": "Bronze",
+      "silver": "Silver",
+      "gold": "Gold",
+      "platinum": "Platinum"
+    },
+    "actions": {
+      "deviceRegistration": "Device Registration",
+      "recommendationCompleted": "Recommendation Completed",
+      "deviceDisposal": "Device Disposal",
+      "articleRead": "Article Read"
+    },
+    "badges": {
+      "title": "Badges",
+      "earned": "Earned",
+      "firstDevice": "First Device",
+      "firstDeviceDesc": "Register your first device",
+      "energySaver": "Energy Saver",
+      "energySaverDesc": "Save 100 kWh of energy",
+      "recycler": "Recycler",
+      "recyclerDesc": "Recycle 5 devices",
+      "scholar": "Scholar",
+      "scholarDesc": "Complete 5 educational articles",
+      "champion": "Champion",
+      "championDesc": "Reach 500 points",
+      "ecoWarrior": "Eco Warrior",
+      "ecoWarriorDesc": "Reach 1000 points"
+    },
+    "history": {
+      "title": "Recent Activity",
+      "empty": "No activity yet. Start earning points!",
+      "viewAll": "View All History"
+    },
+    "leaderboard": {
+      "title": "Leaderboard",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "allTime": "All Time",
+      "you": "You",
+      "empty": "No leaderboard data available",
+      "consentRequired": "Join the Leaderboard",
+      "consentMessage": "To appear on the leaderboard and compete with other users, we need your consent to display your username and points.",
+      "joinLeaderboard": "Join Leaderboard",
+      "privacySettings": "Privacy Settings",
+      "privacyMessage": "You can hide yourself from the leaderboard at any time. Your points and progress will still be tracked privately.",
+      "hideMe": "Hide from Leaderboard"
+    }
+  },
+  "impact": {
+    "title": "Environmental Impact",
+    "report": "Impact Report",
+    "energySaved": "Energy Saved",
+    "co2Reduction": "CO₂ Reduction",
+    "treesEquivalent": "Trees Equivalent",
+    "waterSaved": "Water Saved",
+    "devicesRecycled": "Devices Recycled",
+    "sustainabilityScore": "Sustainability Score",
+    "downloadReport": "Download Report",
+    "period": "Period",
+    "comparison": "Comparison to Previous Period"
+  },
+  "education": {
+    "title": "Education Hub",
+    "subtitle": "Learn about sustainability and earn points",
+    "articles": "Articles",
+    "articlesCompleted": "articles completed",
+    "categoriesLabel": "Categories",
+    "category": "Category",
+    "allCategories": "All Categories",
+    "sdgFilter": "SDG Filter",
+    "allSDGs": "All SDGs",
+    "read": "Read",
+    "readAgain": "Read Again",
+    "completed": "Completed",
+    "pointsEarned": "Points Earned",
+    "earnPoints": "Earn {{points}} points by completing this article",
+    "markComplete": "Mark as Complete",
+    "scrollToComplete": "Scroll to the bottom to complete",
+    "search": "Search articles",
+    "searchPlaceholder": "Search by title or content...",
+    "showCompleted": "Show completed only",
+    "showIncomplete": "Show incomplete only",
+    "clearFilters": "Clear Filters",
+    "noArticles": "No articles found",
+    "categories": {
+      "green_computing": "Green Computing",
+      "energy_saving": "Energy Saving",
+      "sustainability": "Sustainability",
+      "sdg": "SDG",
+      "best_practices": "Best Practices"
+    },
+    "sdg": {
+      "sdg_12": "SDG 12: Responsible Consumption",
+      "sdg_13": "SDG 13: Climate Action"
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "settings": "Settings",
+    "progress": "Progress",
+    "achievements": "Achievements",
+    "statistics": "Statistics",
+    "language": "Language",
+    "notifications": "Notifications",
+    "privacy": "Privacy",
+    "leaderboardConsent": "Show me on leaderboard",
+    "changePassword": "Change Password",
+    "deleteAccount": "Delete Account",
+    "accountDeleted": "Account will be deleted within 30 days",
+    "daysActive": "Days Active",
+    "totalEnergySaved": "Total Energy Saved",
+    "devicesRegistered": "Devices Registered",
+    "myProfile": "My Profile",
+    "accountSettings": "Account Settings",
+    "progressTimeline": "Progress Timeline",
+    "milestones": "Milestones",
+    "sustainabilityScore": "Sustainability Score",
+    "currentStreak": "Current Streak",
+    "longestStreak": "Longest Streak",
+    "co2Reduced": "CO₂ Reduced",
+    "devicesRecycled": "Devices Recycled",
+    "recommendationsCompleted": "Recommendations Completed",
+    "articlesRead": "Articles Read",
+    "memberSince": "Member Since",
+    "emailNotifications": "Email Notifications",
+    "recommendationAlerts": "Recommendation Alerts",
+    "achievementNotifications": "Achievement Notifications",
+    "weeklyReports": "Weekly Reports",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "passwordChanged": "Password changed successfully",
+    "deleteAccountConfirm": "Are you sure you want to delete your account?",
+    "deleteAccountWarning": "This action cannot be undone. Your account and all data will be permanently deleted within 30 days.",
+    "deleteAccountReason": "Reason for deletion (optional)",
+    "accountDeletedSuccess": "Your account deletion request has been submitted",
+    "updateSuccess": "Profile updated successfully",
+    "updateError": "Failed to update profile",
+    "noMilestones": "No milestones yet. Keep going!",
+    "days": "days",
+    "viewAll": "View All"
+  },
+  "navigation": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "devices": "Devices",
+    "energy": "Energy",
+    "recommendations": "Recommendations",
+    "rewards": "Rewards",
+    "impact": "Impact",
+    "education": "Education",
+    "profile": "Profile"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "network": "Network error. Please check your connection.",
+    "unauthorized": "You are not authorized to perform this action.",
+    "notFound": "The requested resource was not found.",
+    "validation": "Please check your input and try again.",
+    "serverError": "Server error. Please try again later."
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email address",
+    "password": "Password must be at least 8 characters",
+    "passwordMatch": "Passwords do not match",
+    "positiveNumber": "Please enter a positive number",
+    "minValue": "Value must be at least {{min}}",
+    "maxValue": "Value must be at most {{max}}"
+  },
+  "accessibility": {
+    "skipToMain": "Skip to main content",
+    "skipToNav": "Skip to navigation",
+    "mainNavigation": "Main navigation",
+    "primaryNavigation": "Primary navigation",
+    "closeMenu": "Close menu",
+    "userMenu": "User menu",
+    "toggleMenu": "Toggle menu",
+    "loading": "Loading",
+    "closeNotification": "Close notification",
+    "openInNewWindow": "Opens in new window",
+    "sortAscending": "Sort ascending",
+    "sortDescending": "Sort descending",
+    "expandSection": "Expand section",
+    "collapseSection": "Collapse section"
+  },
+  "lgpd": {
+    "consent": {
+      "title": "Consent Management",
+      "description": "Manage your data processing consents in accordance with LGPD",
+      "required": "Required",
+      "note": "Note:",
+      "noteText": "You can change these settings at any time. Required consents are necessary for the basic functionality of the application.",
+      "dataProcessing": {
+        "title": "Data Processing",
+        "description": "Required for the application to function. We process your data to provide energy tracking and sustainability features."
+      },
+      "analytics": {
+        "title": "Analytics",
+        "description": "Help us improve the application by allowing anonymous usage analytics."
+      },
+      "marketing": {
+        "title": "Marketing Communications",
+        "description": "Receive updates about new features, tips, and sustainability news."
+      },
+      "leaderboard": {
+        "title": "Leaderboard Participation",
+        "description": "Display your username and points on the public leaderboard."
+      }
+    },
+    "dataManagement": {
+      "title": "Data Management",
+      "description": "Export or delete your personal data"
+    },
+    "dataExport": {
+      "title": "Export Your Data",
+      "description": "Download a copy of all your data stored in our system in JSON format.",
+      "button": "Export My Data",
+      "preparing": "Preparing export..."
+    },
+    "dataDeletion": {
+      "title": "Delete Your Account",
+      "description": "Permanently delete your account and all associated data. This action cannot be undone.",
+      "button": "Delete My Account",
+      "status": "Status:",
+      "requestedAt": "Requested:",
+      "scheduledDate": "Scheduled deletion:",
+      "pendingMessage": "Your account is scheduled for deletion. You can cancel this request before the scheduled date.",
+      "cancel": "Cancel Deletion Request",
+      "warning": "This action will permanently delete your account and all associated data within 30 days. This cannot be undone.",
+      "reasonLabel": "Reason (optional)",
+      "reasonPlaceholder": "Tell us why you're leaving...",
+      "confirm": "Confirm Deletion"
+    }
+  }
+}
